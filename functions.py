@@ -4,7 +4,7 @@ def hello_world():
 def echo_input():
     #version 1
     print('What should I say?')
-    response = input()
+    response = input() 
     print(response)
     return
     #version 2
