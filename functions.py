@@ -70,9 +70,23 @@ def vote():
             else:
                 print('It was a tie!')
             return
-            
+
+def tic_tac_toe():
+    board = ''
+    for i in range(1, 10):
+        if (i - 1) % 3 == 0 or i == 9:
+            board = ''
+            print('     |     |')
+        elif i % 3 == 0:
+            print(board)
+            print('_____|_____|_____')
+        board += '  x  |'
+
 def calling_functions():
-    result1 = add_10(0)
+    print('What number should I add 10 to?')
+    response = input()
+    result1 = add_10(response)
+    print(result1)
 
 def add_10(num):
     num = num + 10

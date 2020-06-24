@@ -2,14 +2,16 @@ from functions import *
 
 
 while True:
-    print('Hi! What module do you want to run? \n1: Hello World')
-    print('2: Echo Me')
-    print('3: For Loop')
-    print('4: While Loop')
-    print('5: If Statement')
-    print('6: Else Statement')
-    print('7: Else If Statement')
-    print('8: Vote')
+    print('Hi! What module do you want to run? \n1 : Hello World')
+    print('2 : Echo Me')
+    print('3 : For Loop')
+    print('4 : While Loop')
+    print('5 : If Statement')
+    print('6 : Else Statement')
+    print('7 : Else If Statement')
+    print('8 : Vote')
+    print('9 : Tic-Tac-Toe')
+    print('10: Use Functions')
     print('x: Exit')
     response = input()
     response = response.lower()
@@ -29,6 +31,8 @@ while True:
         else_if_statement()
     elif response == '8':
         vote()
+    elif response == '9':
+        tic_tac_toe()
     elif response == 'x':
         break
     print('\n')
