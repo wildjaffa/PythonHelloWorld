@@ -10,8 +10,7 @@ while True:
     print('6 : Else Statement')
     print('7 : Else If Statement')
     print('8 : Vote')
-    print('9 : Tic-Tac-Toe')
-    print('10: Use Functions')
+    print('9: Add Numbers')
     print('x: Exit')
     response = input()
     response = response.lower()
@@ -32,22 +31,8 @@ while True:
     elif response == '8':
         vote()
     elif response == '9':
-        tic_tac_toe()
+        add_numbers()
     elif response == 'x':
         break
-    print('\n')
-    
-    
 
-#doStuff = functionsClass()
-#print('Hello World')
-#value1 = input()
-#if value1 == "y":
-#    print(value1)
-
-#for i in range(0,5):
-#    print(i)
-#print('Done')
-#doStuff.thisIsAFunction()
-#nonClassFunction()
 

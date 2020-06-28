@@ -26,13 +26,13 @@ def while_loop():
         i += 1
 
 def if_statement():
-    print('press 1 for a skittles or anything else to return')
+    print('press 1 for skittles or anything else to return')
     response = input()
     if(response == '1'):
         print ('Skittles!')
 
 def else_statement():
-    print('press 1 for a skittles or anything else to say M&Ms')
+    print('press 1 for skittles or anything else to say M&Ms')
     response = input()
     if(response == '1'):
         print ('Skittles!')
@@ -40,7 +40,7 @@ def else_statement():
         print('M&Ms!')
 
 def else_if_statement():
-    print('press 1 for a skittles or 2 to say M&Ms; press anything else for neither')
+    print('press 1 for skittles or 2 to say M&Ms; press anything else for neither')
     response = input()
     if(response == '1'):
         print ('Skittles!')
@@ -53,7 +53,7 @@ def vote():
     skittles = 0
     MMs = 0
     while True:
-        print('press 1 for a skittles or 2 to say M&Ms; press anything else to end the voting')
+        print('press 1 for skittles or 2 to say M&Ms; press anything else to end the voting')
         response = input()
         if(response == '1'):
             skittles += 1
@@ -71,23 +71,17 @@ def vote():
                 print('It was a tie!')
             return
 
-def tic_tac_toe():
-    board = ''
-    for i in range(1, 10):
-        if (i - 1) % 3 == 0 or i == 9:
-            board = ''
-            print('     |     |')
-        elif i % 3 == 0:
-            print(board)
-            print('_____|_____|_____')
-        board += '  x  |'
 
-def calling_functions():
-    print('What number should I add 10 to?')
+def add_numbers():
+    print('first number:')
+    first_num = get_num_response()
+    print('second number:')
+    second_num = get_num_response()
+    print(first_num + second_num)
+
+def get_num_response():
     response = input()
-    result1 = add_10(response)
-    print(result1)
-
-def add_10(num):
-    num = num + 10
-    return num
+    while not response.isdigit():
+        print('Invalid input, only input a number')
+        response = input()
+    return int(response)
